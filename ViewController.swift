@@ -19,7 +19,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         ref=Database.database().reference()
         url.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         btnGo.isEnabled=false
@@ -61,7 +61,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
     
     func webViewDidStartLoad(_ webView: UIWebView) {
